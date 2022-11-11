@@ -1,0 +1,10 @@
+{%block body_content %}
+<form action="" method="POST">
+    {{ form.hidden_tag() }}
+    <p> Weather: {{ form.weather }}</p>
+    <p> Time of Day: {{ form.timeofday }} </p>
+    <p> Result ID: {{ form.fk_rid}} </p>
+    {{ form.submit }}
+</form>
+
+{%endblock body_content %}

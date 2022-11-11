@@ -1,0 +1,16 @@
+{%block body_content %}
+<p>Hello World</p>
+
+{% for weather in weathers %}
+<p> id: {{weather.id}} </p>
+<p> weather: {{weather.weather}} </p>
+<p> timeofday: {{weather.timeofday}} </p>
+<p> Result ID: {{ weather.fk_rid}} </p>
+{% endfor %}
+
+{% for result in results %}
+<p> id: {{result.rid}} </p>
+<p> result: {{result.result}} </p>
+{% endfor %}
+
+{% endblock body_content %}
