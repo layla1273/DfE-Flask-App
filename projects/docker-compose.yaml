@@ -6,7 +6,7 @@ services:
     # Must be logged in to dockerhub to push, but not to pull container code from dockerhub. 
     # image: [HOST]/[AUTHOR]/[APPLICATION]:[TAG]
     # Build the Dockerfile that exists in this location
-    build: ./flask-app
+    build: .
     container_name: flask-app
 
   # This is going to be where I put my configuration to create my nginx container 
